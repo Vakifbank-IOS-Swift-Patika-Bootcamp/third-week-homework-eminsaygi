@@ -67,6 +67,13 @@ Home Screen | Add Employee Screen | Employee List Screen
 • Buttona her bastığımda yeni bir random quote çekecek ve label içerisinde değeri gösterecek.
 • Uygulama ilk açıldığında random quote göstererek başlamalı.
 </pre>
+
+
+## Random Quotes Api 
+Home Screen 
+:-------------------------: 
+![Preview](https://user-images.githubusercontent.com/44553346/202908055-3febecce-c7a8-4507-903d-cbdc82bd6f22.png) 
+
 4- Pragmatic Programmer 8,9 chapterlar özetlenmelidir.
 --
 
