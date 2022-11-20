@@ -70,9 +70,9 @@ Home Screen | Add Employee Screen | Employee List Screen
 
 
 ## Random Quotes Api 
+
 Home Screen 
-:-------------------------: 
-![Preview](https://user-images.githubusercontent.com/44553346/202908055-3febecce-c7a8-4507-903d-cbdc82bd6f22.png) 
+<img width="305" alt="Screenshot 2022-11-20 at 17 32 02" src="https://user-images.githubusercontent.com/44553346/202908055-3febecce-c7a8-4507-903d-cbdc82bd6f22.png">
 
 4- Pragmatic Programmer 8,9 chapterlar özetlenmelidir.
 --
