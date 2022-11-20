@@ -10,6 +10,8 @@
 ◦ Çalışan ekle butonu olmalıdır.(Çalışan ekleme ekranı açılmalı)
 ◦ Çalışan listele butonu olmalı.(Çalışan listesi ekranı açılmalı)
 
+
+
 • Çalışan Ekleme Ekranında;
 
 ◦ Çalışan bilgileri girilecektir.(İsim, yaş, çalışan türü vs)
@@ -23,6 +25,13 @@
 ◦ UITableView veya UICollectionView kullanılmalıdır.
 ◦ Çalışanlar arasında isimden arama yapılabilmelidir.
 </pre>
+
+## Company Management
+
+Home Screen | Add Employee Screen | Employee List Screen
+:-------------------------: | :-------------------------:  | :-------------------------:
+![Preview](https://user-images.githubusercontent.com/44553346/202894355-e1f050e1-3cdc-4db8-9db8-ae52218c300a.png) | ![Preview](https://user-images.githubusercontent.com/44553346/202894359-91a50cff-1c02-4c2e-a0b1-47255af8e733.png) | ![Preview](https://user-images.githubusercontent.com/44553346/202894366-8db25dee-09cf-41a6-bef8-a2e5e320984e.png)
+
 
 2- Hayvanat bahçesi Playground yazılımının Xcode ile projelendirilmesi yapılacaktır. Aşağıdaki Özelliklerin bulunması gerekmektedir:
 --
