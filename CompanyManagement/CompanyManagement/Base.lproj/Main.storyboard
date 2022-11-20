@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EHH-NY-SkL">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CompanyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47N-Lq-Mym">
+                                <rect key="frame" x="11" y="690" width="134" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add Employee"/>
+                                <connections>
+                                    <action selector="addEmployeeClickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yzd-2C-GN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTT-Ap-ctK">
+                                <rect key="frame" x="247" y="690" width="130" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="List Employee"/>
+                                <connections>
+                                    <action selector="listEmployeeClickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uo7-9X-zkz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="vakif" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-1Z-wZA">
+                                <rect key="frame" x="76" y="68" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RRd-pt-vNv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Income/Expense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-bI-Bb0">
+                                <rect key="frame" x="15" y="393" width="157" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZM2-oT-GcJ">
+                                <rect key="frame" x="195" y="386" width="171.33333333333337" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAC-Tm-etE">
+                                <rect key="frame" x="195" y="436" width="86" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="9oG-pC-Xsd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Income">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="IncomeClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XuB-hu-Dxj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoP-x4-eAi">
+                                <rect key="frame" x="291" y="436" width="86" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Expense">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                                    <color key="baseBackgroundColor" systemColor="systemPinkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="EpenseClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tX6-ym-nx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koR-xq-2fP">
+                                <rect key="frame" x="60" y="576" width="272" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bfb-fd-hlE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pay Employee Salaries">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="salariesClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="coW-0B-QMF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VakıfBank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-iD-Bhv">
+                                <rect key="frame" x="122" y="204" width="149" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Mal-4S-vnx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKD-zY-Jcu">
+                                <rect key="frame" x="21" y="244.99999999999997" width="351" height="107.66666666666666"/>
+                                <mutableString key="text">Türkiye Vakıflar Bankası Türk Anonim Ortaklığı ya da kısaca VakıfBank, 1954 yılında kurulmuş, Türkiye Bankalar Birliği'nin 2022 yılı Haziran ayı raporuna göre Türkiye'nin aktif büyüklük açısından en büyük 2. bankasıdır. Genel müdürü Abdi Serdar Üstünsalih'tir.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZM2-oT-GcJ" firstAttribute="trailing" secondItem="KoP-x4-eAi" secondAttribute="trailing" id="140-xW-NHL"/>
+                            <constraint firstItem="zKD-zY-Jcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="2BX-UM-911"/>
+                            <constraint firstItem="HIg-1Z-wZA" firstAttribute="centerX" secondItem="Jvi-iD-Bhv" secondAttribute="centerX" id="32H-ce-lTC"/>
+                            <constraint firstItem="HIg-1Z-wZA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6IK-Tb-n2U"/>
+                            <constraint firstItem="47N-Lq-Mym" firstAttribute="baseline" secondItem="LTT-Ap-ctK" secondAttribute="baseline" id="6Ig-va-kXd"/>
+                            <constraint firstItem="Jvi-iD-Bhv" firstAttribute="centerX" secondItem="koR-xq-2fP" secondAttribute="centerX" id="6VJ-Kt-9RB"/>
+                            <constraint firstItem="mhX-bI-Bb0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="BDU-16-beq"/>
+                            <constraint firstItem="Jvi-iD-Bhv" firstAttribute="top" secondItem="HIg-1Z-wZA" secondAttribute="bottom" constant="8" id="C6S-3e-yqa"/>
+                            <constraint firstItem="47N-Lq-Mym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="D8G-eZ-sw3"/>
+                            <constraint firstItem="KoP-x4-eAi" firstAttribute="leading" secondItem="xAC-Tm-etE" secondAttribute="trailing" constant="10" id="FWs-BR-Zqn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zKD-zY-Jcu" secondAttribute="trailing" constant="21" id="Gnp-6c-3z3"/>
+                            <constraint firstItem="KoP-x4-eAi" firstAttribute="trailing" secondItem="LTT-Ap-ctK" secondAttribute="trailing" id="HHk-41-EbK"/>
+                            <constraint firstItem="Jvi-iD-Bhv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="Lzh-iw-2qW"/>
+                            <constraint firstItem="LTT-Ap-ctK" firstAttribute="baseline" secondItem="47N-Lq-Mym" secondAttribute="firstBaseline" id="ShM-UY-Ldm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="47N-Lq-Mym" secondAttribute="bottom" constant="87" id="TyP-Bw-cTm"/>
+                            <constraint firstItem="HIg-1Z-wZA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-35" id="UBm-FG-Dyw"/>
+                            <constraint firstItem="zKD-zY-Jcu" firstAttribute="top" secondItem="Jvi-iD-Bhv" secondAttribute="bottom" constant="5" id="YTt-Jl-glI"/>
+                            <constraint firstItem="ZM2-oT-GcJ" firstAttribute="leading" secondItem="xAC-Tm-etE" secondAttribute="leading" id="ZfL-5I-YcN"/>
+                            <constraint firstItem="47N-Lq-Mym" firstAttribute="top" secondItem="koR-xq-2fP" secondAttribute="bottom" constant="64" id="aFR-qp-93C"/>
+                            <constraint firstItem="koR-xq-2fP" firstAttribute="top" secondItem="xAC-Tm-etE" secondAttribute="bottom" constant="97" id="eAP-hI-duK"/>
+                            <constraint firstItem="xAC-Tm-etE" firstAttribute="baseline" secondItem="KoP-x4-eAi" secondAttribute="baseline" id="nVA-LD-5GN"/>
+                            <constraint firstItem="xAC-Tm-etE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="195" id="owm-hO-o9q"/>
+                            <constraint firstItem="KoP-x4-eAi" firstAttribute="baseline" secondItem="xAC-Tm-etE" secondAttribute="firstBaseline" id="pNJ-H2-5xi"/>
+                            <constraint firstItem="mhX-bI-Bb0" firstAttribute="centerY" secondItem="ZM2-oT-GcJ" secondAttribute="centerY" id="sSW-p9-DuC"/>
+                            <constraint firstItem="HIg-1Z-wZA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="tnE-JP-fG0"/>
+                            <constraint firstItem="koR-xq-2fP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="wt8-xn-YoX"/>
+                            <constraint firstItem="xAC-Tm-etE" firstAttribute="top" secondItem="ZM2-oT-GcJ" secondAttribute="bottom" constant="16" id="zAe-pH-QKZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YyI-UT-Ngo"/>
+                    <connections>
+                        <outlet property="companyOverview" destination="zKD-zY-Jcu" id="AHq-be-jwE"/>
+                        <outlet property="companyTitle" destination="Jvi-iD-Bhv" id="Zz3-bY-Yub"/>
+                        <outlet property="imageLogo" destination="HIg-1Z-wZA" id="HeG-q4-GPX"/>
+                        <outlet property="moneyTextFiled" destination="ZM2-oT-GcJ" id="fwb-bj-djf"/>
+                        <outlet property="salariesButton" destination="koR-xq-2fP" id="B4P-rx-QRF"/>
+                        <segue destination="hBr-av-kNA" kind="show" identifier="toAddEmployeeVC" id="2CS-t9-1wB"/>
+                        <segue destination="Jkl-H2-aZa" kind="show" identifier="toListEmployeeVC" id="iQA-Bn-sM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.48854961832058" y="-27.464788732394368"/>
+        </scene>
+        <!--Add Employee-->
+        <scene sceneID="NQo-WZ-ggq">
+            <objects>
+                <viewController id="hBr-av-kNA" customClass="AddEmployeeViewController" customModule="CompanyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nUT-kj-yu6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="aTJ-7Q-T7z">
+                                <rect key="frame" x="10" y="285.66666666666669" width="373" height="281.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="WB8-6I-t7S">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="34.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhx-ct-8ML">
+                                                <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zrt-au-zyP">
+                                                <rect key="frame" x="99.666666666666657" y="0.0" width="273.33333333333337" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="aeU-xH-pPV">
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="373" height="34.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tF-PB-hg0">
+                                                <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMt-PT-PAT">
+                                                <rect key="frame" x="93.333333333333343" y="0.0" width="279.66666666666663" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="GaV-dW-Xsy">
+                                        <rect key="frame" x="0.0" y="98.666666666666629" width="373" height="34.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Experience:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GY-DS-5Yj">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QPV-Q3-wvi">
+                                                <rect key="frame" x="139" y="0.0" width="234" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-64-tdV">
+                                        <rect key="frame" x="0.0" y="148" width="373" height="34.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Marital Status:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lE3-kS-reg">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vD9-rk-SJm">
+                                                <rect key="frame" x="159.66666666666663" y="0.0" width="213.33333333333337" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CSI-pf-pjq">
+                                        <rect key="frame" x="0.0" y="197.33333333333331" width="373" height="34.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Employee Salary:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acw-uW-Lyo">
+                                                <rect key="frame" x="0.0" y="0.0" width="130.33333333333334" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E10-eH-y5x">
+                                                <rect key="frame" x="180.33333333333334" y="0.0" width="10.333333333333343" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMJ-96-bvk">
+                                                <rect key="frame" x="240.66666666666663" y="0.0" width="132.33333333333337" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                                <connections>
+                                                    <action selector="calculateSalaryButtonClicked:" destination="hBr-av-kNA" eventType="touchUpInside" id="w6B-We-781"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSj-Bi-J3Z">
+                                        <rect key="frame" x="0.0" y="246.66666666666671" width="373" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Employee"/>
+                                        <connections>
+                                            <action selector="addEmployeeClickedButton:" destination="hBr-av-kNA" eventType="touchUpInside" id="og7-4b-4c4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Employee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gm-zN-NKT">
+                                <rect key="frame" x="103.33333333333333" y="179" width="186.33333333333337" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="96S-m6-VCy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="96S-m6-VCy" firstAttribute="trailing" secondItem="aTJ-7Q-T7z" secondAttribute="trailing" constant="10" id="5OX-tx-Leg"/>
+                            <constraint firstItem="aTJ-7Q-T7z" firstAttribute="leading" secondItem="96S-m6-VCy" secondAttribute="leading" constant="10" id="SIi-z2-XQh"/>
+                            <constraint firstItem="aTJ-7Q-T7z" firstAttribute="centerY" secondItem="nUT-kj-yu6" secondAttribute="centerY" id="TYN-sf-L4o"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Employee" id="ZK4-4S-mVB"/>
+                    <connections>
+                        <outlet property="ageTextField" destination="jMt-PT-PAT" id="5pd-tH-3SI"/>
+                        <outlet property="experienceTextFiled" destination="QPV-Q3-wvi" id="s4a-gv-S89"/>
+                        <outlet property="maritalStatusTextFiled" destination="vD9-rk-SJm" id="uxi-ei-H27"/>
+                        <outlet property="nameTextFiled" destination="zrt-au-zyP" id="VzD-Ha-aPC"/>
+                        <outlet property="salaryLabel" destination="E10-eH-y5x" id="k9B-i3-0fh"/>
+                        <segue destination="Jkl-H2-aZa" kind="show" identifier="listVC" id="3h2-Rb-X6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6e-dV-H6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.5419847328244" y="-501.4084507042254"/>
+        </scene>
+        <!--List Employee-->
+        <scene sceneID="tyz-sh-qxr">
+            <objects>
+                <viewController id="Jkl-H2-aZa" customClass="ListEmployeeViewController" customModule="CompanyManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ol-BB-UG8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hum-cS-lGt">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="employeeCell" id="8YB-cO-nIu">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8YB-cO-nIu" id="odf-25-n3G">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DSG-fR-XGm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DSG-fR-XGm" firstAttribute="trailing" secondItem="Hum-cS-lGt" secondAttribute="trailing" id="0k5-tZ-Osa"/>
+                            <constraint firstItem="DSG-fR-XGm" firstAttribute="bottom" secondItem="Hum-cS-lGt" secondAttribute="bottom" id="CYy-L8-9wG"/>
+                            <constraint firstItem="Hum-cS-lGt" firstAttribute="leading" secondItem="DSG-fR-XGm" secondAttribute="leading" id="rkG-Zt-nJ5"/>
+                            <constraint firstItem="Hum-cS-lGt" firstAttribute="top" secondItem="DSG-fR-XGm" secondAttribute="top" id="yXm-Ko-Fh3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="List Employee" id="T6D-Gy-j9E"/>
+                    <connections>
+                        <outlet property="employeeTableView" destination="Hum-cS-lGt" id="gkn-Ky-BWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n3T-IV-98P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760" y="328"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QOS-Yl-4i9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EHH-NY-SkL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jjP-3x-VKc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="67S-xR-nik"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcP-U1-H7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.770992366412212" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3h2-Rb-X6V"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="vakif" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
