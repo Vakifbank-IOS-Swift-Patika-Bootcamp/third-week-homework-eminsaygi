@@ -11,8 +11,9 @@ class WebService {
     static let shared = WebService()
     private var session = URLSession.shared
     
-    // Asenkron işlemler için escaping clousere kullandık. Modeli işledikten sonra tekrar çağırmamız gerektiği için completion tamamlama bloğu içerisinde escaping clousere kullandık
-    func getMovie(completion: @escaping(Result<Model, Error>)->()){
+    // We used escaping clousere for asynchronous operations. We used escaping clousere in the completion completion block because we need to call it again after processing the model
+    //MARK: - This is where we did the data extraction
+    func getQuotesData(completion: @escaping(Result<Model, Error>)->()){
         
         guard let url = URL(string: "https://programming-quotes-api.herokuapp.com/Quotes/random") else {return}
         
@@ -26,7 +27,7 @@ class WebService {
             }
             catch {
                 completion(.failure(error))
-                print("Catch: WebServices.swift : getMovie")
+                print("Catch: WebService.swift : getQuotes")
                 
             }
         }

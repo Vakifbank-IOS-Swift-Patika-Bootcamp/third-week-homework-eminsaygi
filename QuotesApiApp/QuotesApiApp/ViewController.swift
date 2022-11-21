@@ -13,20 +13,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-   
+        getQuotes()
         }
 
 
     @IBAction func getRandomTouchUpButton(_ sender: Any) {
-        getMovieData()
+        getQuotes()
     }
 }
 
-
+//MARK: - Here is how we did the data display
 extension ViewController {
     
-    func getMovieData() {
-        WebService.shared.getMovie() {  result in
+    func getQuotes() {
+        WebService.shared.getQuotesData() {  result in
             
             switch result {
             case .success(let data):
